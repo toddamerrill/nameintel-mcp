@@ -7,37 +7,42 @@ This directory contains the exact text and submission path for every MCP / x402 
 - `[~]` submitted, awaiting review
 - `[x]` live in registry
 
-## P1 — submit first (highest traffic / credibility)
+## Live
 
-- [ ] [mcp-so.md](./mcp-so.md) — MCP.so community marketplace (16K+ servers listed)
-- [ ] [awesome-claude-dxt.md](./awesome-claude-dxt.md) — Anthropic-adjacent GitHub catalog
-- [ ] [mach-alliance.md](./mach-alliance.md) — MACH Alliance MCP Registry (enterprise credibility)
-- [ ] [azure-api-center.md](./azure-api-center.md) — Microsoft Azure API Center MCP catalog
-- [ ] [x402-org.md](./x402-org.md) — x402.org official showcase
+- [x] [**mcp-registry.md**](./mcp-registry.md) — **Official MCP Registry** as `io.nameintel/server`. The protocol-level discovery layer that MCP clients query at runtime. Highest-leverage placement available.
 
-## P2 — submit second
+## In review
 
-- [ ] [kong-mcp-registry.md](./kong-mcp-registry.md) — Kong API gateway MCP registry
-- [ ] [mcp-compass.md](./mcp-compass.md) — semantic / NPX-based MCP discovery
-- [ ] [awesome-x402.md](./awesome-x402.md) — community x402 GitHub list
-- [ ] [anthropic-aaif.md](./anthropic-aaif.md) — Anthropic AAIF Registry (will become the standard)
+- [~] [awesome-mcp-servers.md](./awesome-mcp-servers.md) — `punkpeye/awesome-mcp-servers` (87K stars). [PR #6512](https://github.com/punkpeye/awesome-mcp-servers/pull/6512) open with the `🤖🤖🤖` fast-track suffix.
 
-## Workflow
+## Auto-cataloged (no PR)
 
-1. Pick a registry from the P1 list.
-2. Open its file here, copy the submission text.
-3. Follow the `Submission path` instructions (usually a PR or web form).
-4. Move the checkbox to `[~]` and add the submission URL / PR link in a comment at the top of the file.
-5. When approved, move to `[x]` and link the live entry.
+- [ ] **coinbase/x402 Bazaar** — x402's Bazaar discovery layer auto-catalogs services when payments settle through a Bazaar-supporting facilitator (Coinbase's does). To trigger: flip `X402_MODE=enforce`, include the `bazaar` extension in our 402 responses, take a first real payment. Until then we're invisible.
 
-## Cross-registry constants (paste these everywhere)
+## Not yet submitted (P1)
+
+- [ ] [mcp-so.md](./mcp-so.md) — MCP.so community marketplace. The backing repo (`chatmcp/mcp-directory`) uses SQL-backed data; submission is likely via the web form at https://mcp.so/submit.
+- [ ] [mach-alliance.md](./mach-alliance.md) — MACH Alliance MCP Registry (enterprise credibility). Web form.
+- [ ] [azure-api-center.md](./azure-api-center.md) — Microsoft Azure API Center MCP catalog. Requires a Microsoft publisher account.
+- [ ] [x402-org.md](./x402-org.md) — x402.org ecosystem showcase. Submission path appears to be a Google Form (https://x402.org/ecosystem → "Contact").
+
+## Not yet submitted (P2)
+
+- [ ] [kong-mcp-registry.md](./kong-mcp-registry.md) — Kong API gateway MCP registry.
+- [ ] [mcp-compass.md](./mcp-compass.md) — Semantic / NPX-based MCP discovery (PR to project's index repo).
+- [ ] [awesome-x402.md](./awesome-x402.md) — Community x402 GitHub list. Need to locate canonical repo.
+- [ ] [anthropic-aaif.md](./anthropic-aaif.md) — Anthropic AAIF Registry. Submission flow goes live when the registry is implemented.
+
+## Cross-registry constants
 
 - **Name:** NameIntel
+- **MCP server name in registry:** `io.nameintel/server`
 - **Tagline:** Clear to launch — name intelligence for the agent economy
 - **MCP endpoint:** `https://mcp.nameintel.io/mcp` (Streamable HTTP)
 - **REST API base:** `https://api.nameintel.io`
 - **Homepage:** `https://nameintel.io`
-- **License:** Proprietary (commercial pay-per-call)
+- **Public repo:** `https://github.com/toddamerrill/nameintel-mcp` (MIT)
+- **License:** MIT (public mirror); proprietary commercial pay-per-call (service)
 - **Author:** Silverback CTO / CogleGroup
 - **Contact:** todd@silverbackcto.com
 - **Pricing:** $0.01–$0.05 USDC per call via x402 (Base + Solana)
