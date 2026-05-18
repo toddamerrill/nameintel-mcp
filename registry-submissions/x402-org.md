@@ -39,7 +39,7 @@
 - **x402 manifest:** https://api.nameintel.io/.well-known/x402
 - **MCP server:** https://mcp.nameintel.io/mcp
 - **OpenAPI:** https://api.nameintel.io/openapi.json
-- **Facilitator:** https://x402.coinbase.com/facilitator (Base)
+- **Facilitator:** https://api.cdp.coinbase.com/platform/v2/x402 (Base)
 
 ## Why this is a good showcase
 
